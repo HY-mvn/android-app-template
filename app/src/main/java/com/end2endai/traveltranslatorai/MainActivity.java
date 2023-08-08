@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.end2endai.traveltranslatorai;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
