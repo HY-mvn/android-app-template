@@ -3,7 +3,9 @@
 This repository is a solution to integrate your web app into an Android application using WebView. The primary purpose is to provide a seamless experience for users accessing web apps on mobile devices.
 
 In this repository, we are creating an android app for this webapp : https://lfontaine.pythonanywhere.com/
+
 The webapp code is also on github : https://github.com/End2EndAI/travel-ai-translator
+
 <div align="center">
     <img src="static/img/screenshot1.jpg" width="304" height="607" >
 	<img src="static/img/screenshot2.png" width="304" height="607" >
