@@ -16,6 +16,5 @@ local.properties
 *.pepk
 *.pro
 *.aab
-*.png
 *.apk
 /app/build
