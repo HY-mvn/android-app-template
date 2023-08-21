@@ -18,3 +18,4 @@ local.properties
 *.aab
 *.png
 *.apk
+/app/build
