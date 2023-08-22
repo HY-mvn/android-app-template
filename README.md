@@ -1,4 +1,4 @@
-# Guide Android App with WebView
+# Guide - Build an Android App using WebView in minutes
 
 This repository is a solution to integrate your web app into an Android application using WebView. The primary purpose is to provide a seamless experience for users accessing web apps on mobile devices.
 
