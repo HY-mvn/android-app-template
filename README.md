@@ -125,3 +125,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 ## Contact
 
 For any inquiries, feedback, or suggestions, please feel free to reach out. You can contact directly via email at [louis.fontaine.pro@gmail.com](mailto:louis.fontaine.pro@gmail.com).
+
+
+<a href="https://www.flaticon.com/fr/icones-gratuites/traduction-en-ligne" title="traduction en ligne icônes">Icon created by khld939 - Flaticon</a>

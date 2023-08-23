@@ -1,9 +1,12 @@
 package com.end2endai.traveltranslatorai;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
 import android.webkit.PermissionRequest;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -14,9 +17,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import android.net.http.SslError;
 import android.webkit.SslErrorHandler;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    private static final boolean DEV_MODE = true;
+    private static final boolean DEV_MODE = false;
     private WebView webView;
     private static final int REQUEST_CODE = 1234; // Define a constant for the request code
 
@@ -72,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             webView.setWebContentsDebuggingEnabled(true);
         }
+
+        // Add the pop-up dialog code here
+        showImagePopup();
     }
 
     @Override
@@ -91,5 +98,25 @@ public class MainActivity extends AppCompatActivity {
                 // Permission denied, show a message to the user or handle as needed
             }
         }
+    }
+
+    private void showImagePopup() {
+        // Create the custom dialog
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(true);
+        dialog.setContentView(R.layout.popup_image_layout);
+
+        // Optional: Close the dialog when the image is clicked
+        ImageView imageView = dialog.findViewById(R.id.popup_image);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        // Show the dialog
+        dialog.show();
     }
 }
