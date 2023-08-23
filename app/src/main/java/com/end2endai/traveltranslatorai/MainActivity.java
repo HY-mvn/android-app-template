@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             webView.setWebContentsDebuggingEnabled(true);
         }
 
-        // Add the pop-up dialog code here
+        // Pop-up dialog with tutorial image
         showImagePopup();
     }
 
