@@ -1,4 +1,4 @@
-package com.end2endai.traveltranslatorai;
+package com.highyieldsagro.app;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
         } else {
             // Load the web content
             if (DEV_MODE == false) {
-                webView.loadUrl("https://lfontaine.pythonanywhere.com/");
+                webView.loadUrl("https://www.highyieldsagro.com/");
             } else {
-                webView.loadUrl("https://192.168.0.3:5009");
+                webView.loadUrl("https://www.highyieldsagro.com/");
             }
         }
 
@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 // Permission granted, load the web content
                 if (DEV_MODE == false) {
-                    webView.loadUrl("https://lfontaine.pythonanywhere.com/");
+                    webView.loadUrl("https://www.highyieldsagro.com/");
                 } else {
-                    webView.loadUrl("https://192.168.0.3:5009");
+                    webView.loadUrl("https://www.highyieldsagro.com/");
                 }
 
             } else {
