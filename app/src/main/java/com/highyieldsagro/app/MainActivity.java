@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Pop-up dialog with tutorial image
-        showImagePopup();
+        //showImagePopup();
     }
 
     @Override
